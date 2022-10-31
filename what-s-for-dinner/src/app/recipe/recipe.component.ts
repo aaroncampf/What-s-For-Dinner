@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import recipes from 'src/assets/recipes.json';
 
+interface RECIPES {
+  name: string;
+  ingredient: string;
+  instruction: string;
+  time: number;
+}
+
 @Component({
   selector: 'app-recipe',
   templateUrl: './recipe.component.html',
@@ -8,11 +15,10 @@ import recipes from 'src/assets/recipes.json';
 })
 export class RecipeComponent implements OnInit {
 
-  recipeData: any;
-  
-
+  Recipes: RECIPES[] = recipes;
+ 
   constructor() {
-    this.recipeData = recipes;
+    this.Recipes;
    }
 
   ngOnInit(): void {
