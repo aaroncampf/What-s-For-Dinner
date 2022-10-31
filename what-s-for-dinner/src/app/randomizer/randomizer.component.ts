@@ -12,4 +12,8 @@ export class RandomizerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  randonSelect(array: string) {
+    let randomElement = array[Math.floor(Math.random() * array.length)];
+  }
+
 }
