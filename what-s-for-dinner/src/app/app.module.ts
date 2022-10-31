@@ -7,6 +7,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { RatingComponent } from './rating/rating.component';
 import { PreferencesComponent } from './preferences/preferences.component';
 import { RandomizerComponent } from './randomizer/randomizer.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RandomizerComponent } from './randomizer/randomizer.component';
     FavoritesComponent,
     RatingComponent,
     PreferencesComponent,
-    RandomizerComponent
+    RandomizerComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule
