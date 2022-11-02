@@ -5,6 +5,10 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    //the following two lines import the json data
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
