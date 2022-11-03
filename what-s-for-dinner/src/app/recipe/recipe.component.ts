@@ -19,6 +19,7 @@ export class RecipeComponent implements OnInit {
  
   constructor() {
     this.Recipes;
+    debugger
    }
 
   ngOnInit(): void {
