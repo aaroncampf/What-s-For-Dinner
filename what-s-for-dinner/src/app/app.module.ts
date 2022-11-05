@@ -8,6 +8,7 @@ import { RatingComponent } from './rating/rating.component';
 import { PreferencesComponent } from './preferences/preferences.component';
 import { RandomizerComponent } from './randomizer/randomizer.component';
 import { RecipeComponent } from './recipe/recipe.component';
+import { RecipesComponent } from './recipes/recipes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RecipeComponent } from './recipe/recipe.component';
     RatingComponent,
     PreferencesComponent,
     RandomizerComponent,
-    RecipeComponent
+    RecipeComponent,
+    RecipesComponent
   ],
   imports: [
     BrowserModule
