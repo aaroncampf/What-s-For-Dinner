@@ -1,5 +1,10 @@
 
-<div>
-  <app-recipe></app-recipe>
-</div>
+<h1>{{title}}</h1>
+
+<nav>
+  <a routerLink="/recipes">Recipes</a>
+  <a routerLink="/favorites">Favorites</a>
+  <a routerLink="/shopping-list">Shopping List</a>
+</nav>
+<router-outlet></router-outlet>
 
