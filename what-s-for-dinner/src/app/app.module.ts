@@ -9,6 +9,7 @@ import { PreferencesComponent } from './preferences/preferences.component';
 import { RandomizerComponent } from './randomizer/randomizer.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RecipeComponent } from './recipe/recipe.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     RatingComponent,
     PreferencesComponent,
     RandomizerComponent,
-    RecipesComponent
+    RecipesComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,
