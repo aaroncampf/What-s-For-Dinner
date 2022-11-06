@@ -7,7 +7,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { RatingComponent } from './rating/rating.component';
 import { PreferencesComponent } from './preferences/preferences.component';
 import { RandomizerComponent } from './randomizer/randomizer.component';
-import { RecipeComponent } from './recipe/recipe.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,11 @@ import { RecipeComponent } from './recipe/recipe.component';
     RatingComponent,
     PreferencesComponent,
     RandomizerComponent,
-    RecipeComponent
+    RecipesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

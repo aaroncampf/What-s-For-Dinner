@@ -9,17 +9,17 @@ interface RECIPES {
 }
 
 @Component({
-  selector: 'app-recipe',
-  templateUrl: './recipe.component.html',
-  styleUrls: ['./recipe.component.css']
+  selector: 'app-recipes',
+  templateUrl: './recipes.component.html',
+  styleUrls: ['./recipes.component.css']
 })
-export class RecipeComponent implements OnInit {
+export class RecipesComponent implements OnInit {
 
   Recipes: RECIPES[] = recipes;
  
   constructor() {
     this.Recipes;
-    debugger
+  
    }
 
   ngOnInit(): void {
