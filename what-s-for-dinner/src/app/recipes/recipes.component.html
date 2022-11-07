@@ -1,9 +1,11 @@
-
-<div>
+<div class='recipes'>
     <h2>List of Recipes</h2>
-    <ol id = 'recipeList'>
-        <li *ngFor = "let recipe of Recipes">{{recipe.name}}, {{recipe.ingredient}}</li>
+    <ol id = 'recipeList' *ngFor = "let recipe of Recipes">
+        <br>
+        <li>{{recipe.name}}</li>
+        <p>ingredients: {{recipe.ingredient}}</p>
+        <p>instruction: {{recipe.instruction}}</p>
+        <p>cooking time(min): {{recipe.time}}</p>
+        <br>
     </ol>
-
 </div>
-
