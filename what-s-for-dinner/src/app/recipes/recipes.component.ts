@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import recipes from 'src/assets/recipes.json';
+import { RECIPES as rp } from 'src/app/Classes/recipes';
 
-interface RECIPES {
-  name: string;
-  ingredient: string;
-  instruction: string;
-  time: number;
-}
 
 @Component({
   selector: 'app-recipes',
@@ -15,7 +10,7 @@ interface RECIPES {
 })
 export class RecipesComponent implements OnInit {
 
-  Recipes: RECIPES[] = recipes;
+  Recipes: rp[] = recipes;
  
   constructor() {
     this.Recipes;

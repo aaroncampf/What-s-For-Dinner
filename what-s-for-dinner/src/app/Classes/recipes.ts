@@ -1,0 +1,23 @@
+
+
+
+export class RECIPES {
+    name!: string;
+    ingredient!: string;
+    instruction!: string;
+    time!: number;
+
+   public static getMultipleRandomRecipes(recipes: RECIPES[]) {
+        const arr = recipes;
+        const multipleRandomRecipes = [];
+
+        for (let i = 0; i < 7; i++) {
+            const index = Math.floor(Math.random() * arr.length);
+            multipleRandomRecipes.push(arr.splice(index, 1)[0]);
+        }
+
+        return multipleRandomRecipes;
+    }
+
+}
+
