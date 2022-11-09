@@ -1,7 +1,7 @@
 export class RECIPES {
     name!: string;
     description!: string;
-    ingredient!: string;
+    ingredient!: string[];
     instruction!: string;
     time!: number;
 
