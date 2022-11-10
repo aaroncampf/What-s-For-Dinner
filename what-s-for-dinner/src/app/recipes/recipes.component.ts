@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import recipes from 'src/assets/recipes.json';
 import { RECIPES as rp } from 'src/app/Classes/recipes';
+import { keyframes } from '@angular/animations';
 
 
 @Component({
@@ -17,7 +18,13 @@ export class RecipesComponent implements OnInit {
   
    }
 
+  showMe: boolean=false
+
   ngOnInit(): void {
+  }
+
+  toggleTag() {
+    this.showMe = !this.showMe
   }
 
 }
