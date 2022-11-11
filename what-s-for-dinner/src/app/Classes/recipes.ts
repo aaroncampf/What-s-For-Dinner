@@ -1,9 +1,7 @@
-
-
-
 export class RECIPES {
     name!: string;
-    ingredient!: string;
+    description!: string;
+    ingredient!: string[];
     instruction!: string;
     time!: number;
 
@@ -21,4 +19,3 @@ export class RECIPES {
     //this is displaying more than 7 recipes
 
 }
-

@@ -5,6 +5,16 @@
         <li><a [routerLink]="['/detail', recipe.name]">{{recipe.name}}</a></li>
         <p>ingredients: {{recipe.ingredient}}</p>
         <p>instruction: {{recipe.instruction}}</p>
+        <p><a href="recipe">{{recipe.name}}</a></p>
+        <p>description: {{recipe.description}}</p>
+        <div>
+            <u (click)="toggleTag()">ingredients:</u>
+            <p *ngIf="showMe">{{recipe.ingredient}}</p>
+        </div>
+        <div>
+            <u (click)="toggleTag()">instruction:</u>
+            <p *ngIf="showMe">{{recipe.instruction}}</p>
+        </div>
         <p>cooking time(min): {{recipe.time}}</p>
         <br>
     </ol>

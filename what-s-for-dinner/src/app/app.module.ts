@@ -10,6 +10,10 @@ import { PreferencesComponent } from './preferences/preferences.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
+import { MainpageComponent } from './Components/mainpage/mainpage.component';
+import { FooterComponent } from './Component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,16 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
     PreferencesComponent,
    
     RecipesComponent,
-    RecipeDetailComponent
+    RecipeDetailComponent,
+    
+    NavbarHomepageComponent,
+    MainpageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
