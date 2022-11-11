@@ -26,11 +26,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": [
-
-             "what-s-for-dinner/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-             "what-s-for-dinner/node_modules/jquery/dist/jquery.min.js"
-            ]
+            "scripts": []
+            
           },
           "configurations": {
             "production": {
