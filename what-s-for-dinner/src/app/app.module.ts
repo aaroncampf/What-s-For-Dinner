@@ -13,7 +13,7 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
 import { MainpageComponent } from './Components/mainpage/mainpage.component';
-import { FooterComponent } from './Component/footer/footer.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [

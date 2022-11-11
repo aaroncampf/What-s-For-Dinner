@@ -28,8 +28,6 @@
             ],
             "scripts": [
 
-             "what-s-for-dinner/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-             "what-s-for-dinner/node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
