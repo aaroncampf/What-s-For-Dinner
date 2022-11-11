@@ -9,9 +9,9 @@ import { PreferencesComponent } from './preferences/preferences.component';
 
 import { RecipesComponent } from './recipes/recipes.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RecipeComponent } from './recipe/recipe.component';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
+//import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
 import { MainpageComponent } from './Components/mainpage/mainpage.component';
 import { FooterComponent } from './Components/footer/footer.component';
 
@@ -21,11 +21,9 @@ import { FooterComponent } from './Components/footer/footer.component';
     ShoppingListComponent,
     FavoritesComponent,
     RatingComponent,
-    PreferencesComponent,
-   
+    PreferencesComponent,   
     RecipesComponent,
-    RecipeComponent,
-    NavbarHomepageComponent,
+    RecipeDetailComponent,    
     MainpageComponent,
     FooterComponent
   ],
