@@ -2,10 +2,11 @@
     <h2>List of Recipes</h2>
     <ol id = 'recipeList' *ngFor = "let recipe of Recipes">
         <br>
-        <li>{{recipe.name}}</li>
+        <li><a [routerLink]="['/detail', recipe.name]">{{recipe.name}}</a></li>
         <p>ingredients: {{recipe.ingredient}}</p>
         <p>instruction: {{recipe.instruction}}</p>
         <p>cooking time(min): {{recipe.time}}</p>
         <br>
     </ol>
+    <router-outlet></router-outlet>
 </div>

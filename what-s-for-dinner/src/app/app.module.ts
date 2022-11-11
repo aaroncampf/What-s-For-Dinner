@@ -9,7 +9,7 @@ import { PreferencesComponent } from './preferences/preferences.component';
 
 import { RecipesComponent } from './recipes/recipes.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RecipeComponent } from './recipe/recipe.component';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { RecipeComponent } from './recipe/recipe.component';
     PreferencesComponent,
    
     RecipesComponent,
-    RecipeComponent
+    RecipeDetailComponent
   ],
   imports: [
     BrowserModule,
