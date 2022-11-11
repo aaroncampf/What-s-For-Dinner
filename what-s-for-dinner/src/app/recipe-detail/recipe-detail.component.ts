@@ -14,9 +14,10 @@ export class RecipeDetailComponent implements OnInit {
 
   rp: RECIPES;
 
-  constructor(private route: ActivatedRoute) {
+  constructor() {
     this.rp = recipes[0];
 
+    /*
     let name = this.route.snapshot.paramMap.get("name");
     //let name = "Bisquick Quiche"
     console.log(name)
@@ -25,6 +26,7 @@ export class RecipeDetailComponent implements OnInit {
         this.rp = recipes[i]
       }
     }
+    */
   }
   ngOnInit(): void {
   }
