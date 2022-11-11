@@ -12,8 +12,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 //import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
-import { MainpageComponent } from './Components/mainpage/mainpage.component';
-import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +22,6 @@ import { FooterComponent } from './Components/footer/footer.component';
     PreferencesComponent,   
     RecipesComponent,
     RecipeDetailComponent,    
-    MainpageComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
