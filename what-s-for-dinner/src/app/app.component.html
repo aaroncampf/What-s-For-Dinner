@@ -1,20 +1,27 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+<!DOCTYPE html>
+<nav class="row navbar navbar-light" style="background-color: lightblue;">
 
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
+  <div class="row ">    
+    <div class="col-2" style="padding-left:4%">
+      <a class="navbar-brand" style="margin-left:1%;" href="#">HOME</a>
+    </div>
 
+    <div class="col-2 text-left">
+      <a class="nav-link" style="cursor:pointer" (click)="navigate('/recipes')">Recipes</a>
+    </div>
+    <div class="col-2 text-left">
+      <a class="nav-link" style="cursor:pointer" (click)="navigate('/favorites')">Favorites</a>
+    </div>
+    <div class="col-2 text-left">
+      <a class="nav-link" style="cursor:pointer" (click)="navigate('/shopping-list')">Shopping List</a>
+    </div>
+    <div class="col-2 text-left">
+      <a class="nav-link" style="cursor:pointer" (click)="navigate('/add-recipe')">Add Recipe</a>
+    </div>
+  </div>
+  
 
-
-<nav>
-  <a routerLink="/recipes">Recipes</a>
-  <a routerLink="/favorites">Favorites</a>
-  <a routerLink="/shopping-list">Shopping List</a>
 </nav>
+
+
 <router-outlet></router-outlet>
