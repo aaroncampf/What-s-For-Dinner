@@ -11,7 +11,8 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
+import { FormsModule } from '@angular/forms';
 //import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
 
 @NgModule({
@@ -23,12 +24,13 @@ import { AddRecipeComponent } from './add-recipe/add-recipe.component';
     PreferencesComponent,   
     RecipesComponent,
     RecipeDetailComponent,
-    AddRecipeComponent  
+    RecipeManagerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule   
   ],
   providers: [],
   bootstrap: [AppComponent]
