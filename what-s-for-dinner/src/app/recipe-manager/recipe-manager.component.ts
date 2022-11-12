@@ -150,22 +150,7 @@ export class RecipeManagerComponent implements OnInit {
   //       payload: json,
   //     },
   //   });
-  // }
-
-  async createRecipe(): Promise<PutCommandOutput> {
-       
-    
-    let response = await this.dynamoDocument.put({
-      TableName : 'recipe-storage',
-      Item: {
-        recipeId : Math.floor(Math.random()*(10-1+1)+1).toString(),
-        recipeSortKey: this.recipeName,
-        payload: "JSON HERE",
-      },
-    });
-
-    return response;
-  }
+  // }  
 
   async deleteExistingRecipe(): Promise<any>{
 
@@ -195,7 +180,7 @@ export class RecipeManagerComponent implements OnInit {
   }
 
 
-  async updateRecipe(): Promise<any>{
+  async addRecipe(): Promise<any>{
     let existingRecipes = await this.getRecipes();
     
     let recipeToAdd = new Recipe();
@@ -225,8 +210,6 @@ export class RecipeManagerComponent implements OnInit {
       TableName: 'recipe-storage',
       Key: {'recipeId': '1', 'recipeSortKey': '1'}
     }
-
-    let response : Recipe[] = [];
 
     let dataInDynamoDb = await this.dynamoDocument.get(queryParameters);
 
