@@ -26,7 +26,7 @@ export class RecipeManagerComponent implements OnInit {
 
 
   constructor() {
-    this.dynamodbClient = new DynamoDB({credentials: {accessKeyId : "AKIASNNY6XMTDTLH2ZWW", secretAccessKey: "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"}, region: "us-east-1" });
+    this.dynamodbClient = new DynamoDB({});//TODO: Add credentials. Ask Robert for these credentials...
     this.dynamoDocument = DynamoDBDocument.from(this.dynamodbClient);
   }
   ngOnInit(): void {
