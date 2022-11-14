@@ -11,6 +11,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 //import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     RatingComponent,
     PreferencesComponent,   
     RecipesComponent,
-    RecipeDetailComponent,    
+    RecipeDetailComponent,
+    FavoritesListComponent,    
   ],
   imports: [
     BrowserModule,
