@@ -1,7 +1,6 @@
 
 
-
-/* * {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -38,4 +37,25 @@ nav {
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
-} */
+}
+*.btn:active,
+.btn:focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none !important;
+}
+
+button>span {
+    color: red;
+    font-size: 20px;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn:active,
+.btn:hover,
+.btn:focus {
+    background-color: white;
+}
