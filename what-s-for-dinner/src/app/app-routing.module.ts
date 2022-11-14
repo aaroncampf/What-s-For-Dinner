@@ -4,6 +4,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component'
+import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
 
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent },
@@ -11,6 +12,7 @@ const routes: Routes = [
   // { path: 'detail', component: RecipeDetailComponent },
   {path: 'detail/:name', component: RecipeDetailComponent},
   { path: 'shopping-list', component: ShoppingListComponent},
+  { path: 'recipe-manager', component: RecipeManagerComponent},
 ];
 
 

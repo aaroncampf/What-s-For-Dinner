@@ -1,0 +1,22 @@
+<!doctype html>
+
+<div class="row" style="margin: 1%;">
+    <span>Okay</span>
+    <button type="button" class="btn btn-primary" (click)="addRecipe()">Create Dummy To DynamoDB</button>
+    
+    <label>Time</label>
+    <input [(ngModel)]="recipeTime" type="number">
+
+    
+    <label>Recipe Name:</label>
+    <input type="text" [(ngModel)]="recipeName">
+
+    <div class="col-3">
+        <button type="button" class="btn btn-primary" (click)="getRecipes()">Super Get</button>
+    </div>
+
+    <div class="col-3">
+        <button type="button" class="btn btn-primary" (click)="deleteExistingRecipe()">Delete</button>
+        <input type="text" [(ngModel)]="deleteRecipeName">
+    </div>
+</div>
