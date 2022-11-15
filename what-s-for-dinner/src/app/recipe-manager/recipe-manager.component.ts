@@ -1,7 +1,7 @@
 import { ASTWithName } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../models/recipe.model';
-import {InputNumberModule} from 'primeng/inputnumber';
+//import {InputNumberModule} from 'primeng/inputnumber';
 
 @Component({
   selector: 'recipe-manager',
@@ -9,7 +9,11 @@ import {InputNumberModule} from 'primeng/inputnumber';
   styleUrls: ['./recipe-manager.component.css']
 })
 export class RecipeManagerComponent implements OnInit {
+  ngOnInit(): void {
+    //throw new Error('Method not implemented.');
+  }
 
+/*
   public recipeName: string = '';
   public recipeDescription: string = '';
   public recipeIngredients: string[] = [];
@@ -175,9 +179,5 @@ export class RecipeManagerComponent implements OnInit {
     
     return JSON.parse(localStorage.getItem("recipeDB")) as Recipe[];
   }
-  
+  */
 }
-
-
-
-
