@@ -1,22 +1,40 @@
 <!doctype html>
 
-<div class="row" style="margin: 1%;">
-    <span>Okay</span>
-    <button type="button" class="btn btn-primary" (click)="addRecipe()">Create Dummy To DynamoDB</button>
-    
-    <label>Time</label>
-    <input [(ngModel)]="recipeTime" type="number">
+<title>Recipe Database</title>
 
+<body> 
+    <h2 id="title">Recipe Database</h2>
     
+<div class="row" style="margin:1%;">
+
     <label>Recipe Name:</label>
     <input type="text" [(ngModel)]="recipeName">
 
-    <div class="col-3">
-        <button type="button" class="btn btn-primary" (click)="getRecipes()">Super Get</button>
+    <label>Recipe Description:</label>
+    <input type="text" [(ngModel)]="recipeDescription">
+
+    <label>Recipe Ingredients:</label>
+    <input type="text" [(ngModel)]="recipeIngredients">
+
+    <label>Recipe Instructions:</label>
+    <input type="text" [(ngModel)]="recipeInstructions">
+
+    <label>Time:</label>
+    <input [(ngModel)]="recipeTime" type="number">
+
+
+    <div class="col-3" style="margin-right: -15%;">
+        <button type="button" class="btn btn-primary" (click)="getRecipes()">Get Recipe</button>
     </div>
 
-    <div class="col-3">
+    <div class="col-5">
+        <button type="button" class="btn btn-primary" (click)="addRecipe()">Add Recipe</button>
+    </div>
+
+    <div class="col-3" style="margin-left: 20%;"> 
         <button type="button" class="btn btn-primary" (click)="deleteExistingRecipe()">Delete</button>
         <input type="text" [(ngModel)]="deleteRecipeName">
     </div>
+
 </div>
+</body>
