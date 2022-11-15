@@ -2,7 +2,7 @@
     <h2>List of Recipes</h2>
     <ol id = 'recipeList' *ngFor = "let recipe of Recipes">
         <br>
-        <li><a [routerLink]="['/detail', recipe.name]">{{recipe.name}}</a></li>
+        <li><a href="/detail/{{recipe.name}}" onclick="onClick()">{{recipe.name}}</a></li>
         <p>ingredients: {{recipe.ingredient}}</p>
         <p>instruction: {{recipe.instruction}}</p>
         <p><a href="recipe">{{recipe.name}}</a></p>
@@ -18,5 +18,13 @@
         <p>cooking time(min): {{recipe.time}}</p>
         <br>
     </ol>
-    <router-outlet></router-outlet>
+    <!-- <router-outlet></router-outlet> -->
 </div>
+
+<!-- [routerLink]="['/detail', recipe.name]" -->
+<script>
+function onClick(){
+    localStorage.setItem('Recipe', '');
+}
+
+</script>

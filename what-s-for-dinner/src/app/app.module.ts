@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FavoritesListComponent } from './favorites-list/favorites-list.component';
-import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
+// import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
 import { FormsModule } from '@angular/forms';
 //import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
 
@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     RecipesComponent,
     RecipeDetailComponent,
     FavoritesListComponent,    
-    RecipeManagerComponent
+    
   ],
   imports: [
     BrowserModule,
