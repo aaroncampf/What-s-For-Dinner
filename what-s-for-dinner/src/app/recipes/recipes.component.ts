@@ -18,6 +18,8 @@ export class RecipesComponent implements OnInit {
     this.Recipes;
   
    }
+
+
   // getRecipe(recipe: any ) {
   //   const selectedRecipe = localStorage.setItem('myRecipe', recipe);
   //   localStorage.getItem(selectedRecipe);

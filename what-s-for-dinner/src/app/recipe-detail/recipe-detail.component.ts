@@ -17,19 +17,28 @@ export class RecipeDetailComponent implements OnInit {
   constructor() {
     this.rp = recipes[0];
     
-
-
-  }
-  public getRecipe (){
-  const RecipeName = localStorage.getItem('Recipe')
-    for (let i = 0; i <= recipes.length; i++){
-      if (RecipeName == recipes[i].name){
+    
+    const RecipeName = localStorage.getItem('Recipe')
+    console.log(RecipeName)
+    for (let i = 0; i <= recipes.length-1; i++) {
+      if (RecipeName == recipes[i].name) {
         this.rp = recipes[i];
-        
 
       }
     }
+
+
   }
+  // public getRecipe (){
+  // const RecipeName = localStorage.getItem('Recipe')
+  //   for (let i = 0; i <= recipes.length; i++){
+  //     if (RecipeName == recipes[i].name){
+  //       this.rp = recipes[i];
+        
+
+  //     }
+  //   }
+  
 
   //   let name = this.router.snapshot.paramMap.get("name");
   //   getRecipe(){
