@@ -1,11 +1,12 @@
 <div class='recipes'>
     <h2>List of Recipes</h2>
-    <ol id = 'recipeList' *ngFor = "let recipe of Recipes">
+    <div id = 'recipeList' *ngFor = "let recipe of Recipes">
         <br>
         <li><a href="/detail/{{recipe.name}}" onClick="localStorage.setItem('Recipe', this.innerHTML)">{{recipe.name}}</a></li>
         <!-- <p>ingredients: {{recipe.ingredient}}</p>
         <p>instruction: {{recipe.instruction}}</p> -->
         <!-- <p><a href="recipe">{{recipe.name}}</a></p> -->
+        <img src={{recipe.image}}>
         <p>description: {{recipe.description}}</p>
         <div>
             <u (click)="toggleTag()">ingredients:</u>
@@ -17,7 +18,7 @@
         </div>
         <p>cooking time(min): {{recipe.time}}</p>
         <br>
-    </ol>
+    </div>
     <!-- <router-outlet></router-outlet> -->
 </div>
 
