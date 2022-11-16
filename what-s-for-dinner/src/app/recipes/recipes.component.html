@@ -3,9 +3,9 @@
     <ol id = 'recipeList' *ngFor = "let recipe of Recipes">
         <br>
         <li><a href="/detail/{{recipe.name}}" onclick="onClick(recipe.name)">{{recipe.name}}</a></li>
-        <p>ingredients: {{recipe.ingredient}}</p>
-        <p>instruction: {{recipe.instruction}}</p>
-        <p><a href="recipe">{{recipe.name}}</a></p>
+        <!-- <p>ingredients: {{recipe.ingredient}}</p>
+        <p>instruction: {{recipe.instruction}}</p> -->
+        <!-- <p><a href="recipe">{{recipe.name}}</a></p> -->
         <p>description: {{recipe.description}}</p>
         <div>
             <u (click)="toggleTag()">ingredients:</u>
