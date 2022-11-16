@@ -1,5 +1,6 @@
 export class RECIPES {
     name!: string;
+    image!: string;
     description!: string;
     ingredient!: string[];
     instruction!: string;

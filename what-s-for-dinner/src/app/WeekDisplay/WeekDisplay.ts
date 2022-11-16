@@ -24,6 +24,8 @@ export class RecipeDetailComponent implements OnInit {
   const RecipeName = localStorage.getItem('Recipe')
     for (let i = 0; i <= recipes.length; i++){
       if (RecipeName == recipes[i].name){
+        this.rp = recipes[i];
+        
 
       }
     }
