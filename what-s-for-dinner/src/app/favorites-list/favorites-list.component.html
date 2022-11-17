@@ -1,1 +1,10 @@
-<!-- <app-favorites favoritesList = {{selectedChange}}></app-favorites> -->
+<ol>
+    <br>
+    <li>{{rp.name}}</li>
+    <p>ingredients: {{rp.ingredient}}</p>
+    <p>instruction: {{rp.instruction}}</p>
+    <p>cooking time(min): {{rp.time}}</p>
+    <br>
+</ol>
+
+<button onclick="localStorage.clear()">Clear</button>

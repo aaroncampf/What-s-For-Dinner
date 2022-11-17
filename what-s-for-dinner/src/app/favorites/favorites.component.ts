@@ -10,8 +10,8 @@ export class FavoritesComponent implements OnInit {
 
   // @Input() addToFavorites = false;
   // @Output() selectedChange = new EventEmitter<boolean>();
-addToFavorites = false;
-selectedChange = new EventEmitter<boolean>()
+// addToFavorites = false;
+// selectedChange = new EventEmitter<boolean>()
 
   constructor() { }
 
@@ -19,12 +19,12 @@ selectedChange = new EventEmitter<boolean>()
   ngOnInit(): void {
   }
 
-  public toggleSelected() {
-    if (this.addToFavorites){
-    // this.addTofavorites = !this.addTofavorites;
-    this.selectedChange.emit(this.addToFavorites);
-    }
-  }
+  // public toggleSelected() {
+  //   if (this.addToFavorites){
+  //   // this.addTofavorites = !this.addTofavorites;
+  //   this.selectedChange.emit(this.addToFavorites);
+  //   }
+  // }
 
 // addToFavorites(){
 //   let favoriteList = []

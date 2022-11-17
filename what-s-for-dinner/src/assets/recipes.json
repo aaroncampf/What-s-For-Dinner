@@ -6,7 +6,8 @@
     "ingredient": ["black pepper", "salt", "eggs", "biscuit baking mix", "milk", "onions", "cheese", "fillings of your choice(example broccoli, mushrooms, etc)"],
     "instruction": "Heat oven to 400℉ (200℃).\n\nGrease 10 inch pie plate or 8 inch square.\n\nSprinkle fillings, onions and cheese in plate.\n\nBeat remaining ingredients until smooth and pour into plate.\n\nBake 35 to 40 minutes or until a knife inserted halfway between edge and center comes out clean.\n\nLet stand 5 minutes before serving.",
     "time": 60,
-    "tags": ["vegetarian"]
+    "tags": ["vegetarian"],
+    "favorites": true
   },
   {
     "name": "Chicken Cheese Stuffed Poblano Peppers",
