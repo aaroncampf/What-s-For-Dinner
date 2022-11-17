@@ -6,7 +6,7 @@ import { RecipesComponent } from '../recipes/recipes.component';
 
 
 @Component({
-  selector: 'app-recipeDetail',
+  selector: 'week-display',
   templateUrl: './week-display.component.html',
   styleUrls: ['./week-display.component.css']
 })
