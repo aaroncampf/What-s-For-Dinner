@@ -7,8 +7,8 @@ import { RecipesComponent } from '../recipes/recipes.component';
 
 @Component({
   selector: 'app-recipeDetail',
-  templateUrl: './week-display.component.html',
-  styleUrls: ['./week-display.component.css']
+  templateUrl: './recipe-detail.component.html',
+  styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
 
