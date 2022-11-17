@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RECIPES } from 'src/app/Classes/recipes';
 import recipes from 'src/assets/recipes.json';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { RecipesComponent } from '../recipes/recipes.component';
 
 
 @Component({
