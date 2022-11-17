@@ -9,7 +9,7 @@ import { PreferencesComponent } from './preferences/preferences.component';
 
 import { RecipesComponent } from './recipes/recipes.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RecipeDetailComponent } from './week-display/week-display.component';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 // import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
