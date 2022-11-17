@@ -10,7 +10,7 @@ import { RecipesComponent } from '../recipes/recipes.component';
   templateUrl: './week-display.component.html',
   styleUrls: ['./week-display.component.css']
 })
-export class RecipeDetailComponent implements OnInit {
+export class WeekDisplayComponent implements OnInit {
 
   rp: RECIPES;
 
