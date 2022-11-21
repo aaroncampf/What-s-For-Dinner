@@ -1,12 +1,11 @@
 <!doctype html>
 
-<title>Recipe Database</title>
+<h1>Recipe Database</h1>
 
 <body> 
-    <h2 id="title">Recipe Database</h2>
     
 <div class="row" style="margin:1%;">
-<!-- 
+
     <label>Recipe Name:</label>
     <input type="text" [(ngModel)]="recipeName">
 
@@ -23,18 +22,23 @@
     <input [(ngModel)]="recipeTime" type="number">
 
 
-    <div class="col-3" style="margin-right: -15%;">
-        <button type="button" class="btn btn-primary" (click)="getRecipes()">Get Recipe</button>
+    <div class="col-2" style="margin-right: -5%;">
+        <button type="button" class="btn btn-primary" (click)="initialLoad()">Generate Recipe</button>
     </div>
 
-    <div class="col-5">
+
+    <div class="col-3" style="margin-right: -15%;">
         <button type="button" class="btn btn-primary" (click)="addRecipe()">Add Recipe</button>
     </div>
 
-    <div class="col-3" style="margin-left: 20%;"> 
+    <div class="col-5">
+        <button type="button" class="btn btn-primary" (click)="getRecipes()">Get Recipe</button>
+    </div>
+
+    <div class="col-3" style="margin-left: 11.5%;"> 
         <button type="button" class="btn btn-primary" (click)="deleteExistingRecipe()">Delete</button>
         <input type="text" [(ngModel)]="deleteRecipeName">
-    </div> -->
+    </div>
 
 </div>
 </body>
