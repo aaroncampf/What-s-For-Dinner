@@ -7,6 +7,7 @@ export class RECIPES {
     time!: number;
     
     
+    
 
    public static getMultipleRandomRecipes(recipes: RECIPES[]) {
         const arr = recipes;
