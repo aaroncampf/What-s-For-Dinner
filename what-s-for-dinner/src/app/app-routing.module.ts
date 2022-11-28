@@ -8,6 +8,7 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { PreferencesComponent } from './preferences/preferences.component';
 
 // import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
+import { RatingComponent } from './rating/rating.component';
 
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent },
