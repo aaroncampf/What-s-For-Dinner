@@ -5,6 +5,9 @@ export class RECIPES {
     ingredient!: string[];
     instruction!: string;
     time!: number;
+    
+    
+    
 
    public static getMultipleRandomRecipes(recipes: RECIPES[]) {
         const arr = recipes;

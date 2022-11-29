@@ -1,20 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { RECIPES } from 'src/app/Classes/recipes';
 import recipes from 'src/assets/recipes.json';
+
+
 @Component({
-  selector: 'week-display',
-  templateUrl: './week-display.component.html',
-  styleUrls: ['./week-display.component.css']
+  selector: 'app-recipeDetail',
+  templateUrl: './recipe-detail.component.html',
+  styleUrls: ['./recipe-detail.component.css']
 })
-export class WeekDisplayComponent implements OnInit {
+export class RecipeDetailComponent implements OnInit {
 
   rp: RECIPES;
 
   constructor() {
     this.rp = recipes[0];
-    //add array of the week and in the constructor add a sample ingredient
     
-    const RecipeName = localStorage.getItem('Recipes')
+    
+    const RecipeName = localStorage.getItem('Recipe')
     console.log(RecipeName)
     for (let i = 0; i <= recipes.length-1; i++) {
       if (RecipeName == recipes[i].name) {
