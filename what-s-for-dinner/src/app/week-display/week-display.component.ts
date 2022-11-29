@@ -12,7 +12,7 @@ export class WeekDisplayComponent implements OnInit {
 
   constructor() {
     this.rp = recipes[0];
-    
+    //add array of the week and in the constructor add a sample ingredient
     
     const RecipeName = localStorage.getItem('Recipe')
     console.log(RecipeName)
