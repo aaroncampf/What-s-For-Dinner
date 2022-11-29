@@ -22,8 +22,7 @@ export class RecipeManagerComponent implements OnInit  {
   ngOnInit(): void { 
   }
 
-  async initialLoad(): Promise<any> {
-    // if(!localStorage._recipes_database || typeof JSON.parse(localStorage._recipes_database) [0] != 'object'){ 
+  async initialLoad(): Promise<any> { 
     let recipes_Storage =[
       {
         "name": "Bisquick Quiche",
@@ -132,7 +131,6 @@ export class RecipeManagerComponent implements OnInit  {
       }
     ];
 
-    // localStorage._recipes_database = JSON.stringify(recipes);
     localStorage.setItem('Recipes', JSON.stringify(recipes_Storage));
     
   }
@@ -170,7 +168,8 @@ export class RecipeManagerComponent implements OnInit  {
     recipeToAdd.instructions = this.recipeInstructions;
     recipeToAdd.time = this.recipeTime;
 
-  
+    
+    
     existingRecipes.push(recipeToAdd);
 
     localStorage.setItem('Recipes', JSON.stringify(existingRecipes));
@@ -181,7 +180,6 @@ export class RecipeManagerComponent implements OnInit  {
     let retrievedRecipes = localStorage.getItem('Recipes') as string; 
     
    return JSON.parse(retrievedRecipes);
-    
 
   }
   
