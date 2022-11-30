@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RatingComponent implements OnInit {
 
+  review = "";
+  postReview : string[] = [];
+
+  post() {
+    this.postReview.push(this.review);
+    this.review = ""; 
+  }
+
   constructor() { }
 
   ngOnInit(): void {
