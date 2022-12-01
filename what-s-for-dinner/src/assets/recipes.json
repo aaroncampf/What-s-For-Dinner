@@ -129,17 +129,3 @@
     "time": 55
   }
 ]
-
-// function recipeTest (bisquickQuiche) {
-//   return `
-//   <div class="recipeTest">
-//   <img class="recipe-test-photo" scr="https://c.recipeland.com/images/r/21350/e57374730c4318e1027b_1024.jpg"> // ${recipe.image}
-//   <h2 class="recipe-test-name"> Bisquick Quiche </h2> // ${recipe.name}
-//   <h3 class="recipe-test-description"> Juicy, tender and tasty chicken n' mushrooms. An easy weeknight meal that's simple to prepare using economical ingredients </h2> //${recipe.description}
-//   <h4 class="recipe-test-ingredient"> ingredient.length </h2> // ${recipe.ingredient.length}
-//   <h5 class="recipe-test-instruction"> Heat oven to 400℉ (200℃).\n\nGrease 10 inch pie plate or 8 inch square.\n\nSprinkle fillings, onions and cheese in plate.\n\nBeat remaining ingredients until smooth and pour into plate.\n\nBake 35 to 40 minutes or until a knife inserted halfway between edge and center comes out clean.\n\nLet stand 5 minutes before serving.", </h2> // ${recipe.instruction}
-//   <h6 class="recipe-test-time"> time:60 </h2> // ${recipe.time}
-//   <h6 class="recipe-test-tags"> tag: vegetarian</h2> // ${recipe.tag}`
-
- 
-// }
