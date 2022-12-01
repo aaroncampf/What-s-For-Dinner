@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RECIPES } from 'src/app/Classes/recipes';
 import recipes from 'src/assets/recipes.json';
-import { FavoritesComponent } from '../favorites/favorites.component';
+// import { FavoritesComponent } from '../favorites/favorites.component';
 
 @Component({
   selector: 'app-favorites-list',

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { FavoritesComponent } from './favorites/favorites.component';
+// import { FavoritesComponent } from './favorites/favorites.component';
 import { RatingComponent } from './rating/rating.component';
 import { PreferencesComponent } from './preferences/preferences.component';
 
@@ -20,7 +20,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     ShoppingListComponent,
-    FavoritesComponent,
+    // FavoritesComponent,
     RatingComponent,
     PreferencesComponent,
     RecipesComponent,
