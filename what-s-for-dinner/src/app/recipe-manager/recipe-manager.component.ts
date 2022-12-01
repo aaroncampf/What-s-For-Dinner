@@ -1,7 +1,7 @@
 import { ASTWithName, Call } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../models/recipe.model';
-import {InputNumberModule} from 'primeng/inputnumber';
+// import {InputNumberModule} from 'primeng/inputnumber';
 
 @Component({
   selector: 'recipe-manager',
