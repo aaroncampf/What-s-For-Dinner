@@ -6,8 +6,8 @@ import { WeekDisplayComponent } from './week-display/week-display.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { PreferencesComponent } from './preferences/preferences.component';
-import { FavoritesListComponent } from './favorites-list/favorites-list.component'
-// import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
+import { FavoritesListComponent } from './favorites-list/favorites-list.component';
+import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
 
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent },
