@@ -6,13 +6,8 @@ import { WeekDisplayComponent } from './week-display/week-display.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { PreferencesComponent } from './preferences/preferences.component';
-<<<<<<< HEAD
-import { FavoritesListComponent } from './favorites-list/favorites-list.component'
-// import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
-=======
 import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
->>>>>>> b4d325b0af39b23ebb6b043bad4d283f1493c00f
 
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent },
@@ -21,8 +16,9 @@ const routes: Routes = [
   { path: 'detail/:name', component: RecipeDetailComponent },
   { path: 'shopping-list', component: ShoppingListComponent },
   { path: 'preferences', component: PreferencesComponent },
-  { path: 'favorites-list', component: FavoritesListComponent}
-
+  { path: 'favorites-list', component: FavoritesListComponent},
+  { path: 'manage', component: RecipeManagerComponent},
+  { path: 'week-display', component: WeekDisplayComponent}
 ];
 
 

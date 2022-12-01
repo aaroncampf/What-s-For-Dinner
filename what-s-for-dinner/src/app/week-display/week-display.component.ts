@@ -8,17 +8,17 @@ import recipes from 'src/assets/recipes.json';
 })
 export class WeekDisplayComponent implements OnInit {
 
-  rp: RECIPES;
+  Monday: RECIPES[]  = [];
+  Tuesday: RECIPES[]  = [];
+  Wednesday: RECIPES[]  = [];
+  Thursday: RECIPES[]  = [];
+  Friday: RECIPES[]  = [];
+  Saturday: RECIPES[]  = [];
+  Sunday: RECIPES[]  = [];
+
 
   constructor() {
-    this.rp = recipes[0];
-    let day1 = "Monday";
-    let day2 = "Tuesday";
-    let day3 = "Wednesday";
-    let day4 = "Thursday";
-    let day5 = "Friday";
-    let day6 = "Saturday";
-    let day7 = "Sunday";
+    this.Monday.push(recipes[0]);
 
     const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
@@ -34,14 +34,8 @@ export class WeekDisplayComponent implements OnInit {
     // day[6] = "Sunday";
     // add array of the week and in the constructor add a sample ingredient
     
-    const RecipeName = localStorage.getItem('Recipes')
-    console.log(RecipeName)
-    for (let i = 0; i <= recipes.length-1; i++) {
-      if (RecipeName == recipes[i].name) {
-        this.rp = recipes[i];
-
-      }
-    }
+    let retrievedRecipes = localStorage.getItem('Recipes') as string;    
+    JSON.parse(retrievedRecipes);
 
 
   }
