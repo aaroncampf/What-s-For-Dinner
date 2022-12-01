@@ -16,8 +16,8 @@ const routes: Routes = [
   { path: 'detail/:name', component: RecipeDetailComponent },
   { path: 'shopping-list', component: ShoppingListComponent },
   { path: 'preferences', component: PreferencesComponent },
-  { path: 'favorites-list', component: FavoritesListComponent}
-
+  { path: 'favorites-list', component: FavoritesListComponent},
+  { path: 'manage', component: RecipeManagerComponent}
 ];
 
 

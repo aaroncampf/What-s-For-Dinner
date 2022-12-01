@@ -21,19 +21,7 @@ export class AppComponent {
     this.router.navigateByUrl(destination);
   }
 
-// export class dayOfweek {
-//   constructor(
-//     public Monday: string,
-//     public Tuesday: string,
-//     public Wednesday: string,
-//     public Thursday: string,
-//     public Friday: string,
-//     public Saturday: string,
-//     public Sunday: string
-//   ) { }
-// }
 
-//make this into an array of recipies
 }
 
 
