@@ -1,69 +1,36 @@
-<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.5.0/jasmine.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.5.0/boot1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.5.0/jasmine-html.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jasmine/4.5.0/boot0.js"></script>
+  <!--
+    <script> src="what-s-for-dinner/karma.conf.js"</script>
+    <script src="specs/test.js"></script>  
+  -->  
+</head>
 <nav class="row navbar navbar-light" style="background-color: lightblue;">
   <div class="row ">    
     <div class="col-2" style="padding-left:4%">
       <!-- <a class="navbar-brand" style="margin-left:1%;" href="#">What's for Dinner?</a> -->
-      <a href="week-display/week-display.component.html">What's for Dinner?</a>
+      <a href="week-display">Week Planner</a>
     </div>
 
     <div class="col-2 text-left">
       <!-- <a class="nav-link" style="cursor:pointer" (click)="navigate('/recipes')">Recipes</a> -->
-      <a href="recipes/recipes.component.html">Recipes</a>
+      <a href="recipes">Recipes</a>
     </div>
     <div class="col-2 text-left">
       <!-- <a class="nav-link" style="cursor:pointer" (click)="navigate('/favorites')">Favorites</a> -->
-      <a href="favorites/favorites.component.html">Favorites</a>
+      <a href="favorites-list">Favorites</a>
     </div>
     <div class="col-2 text-left">
       <!-- <a class="nav-link" style="cursor:pointer" (click)="navigate('/shopping-list')">Shopping List</a> -->
-      <a href="shopping-list/shopping-list.component.html">Shopping List</a>
+      <a href="shopping-list">Shopping List</a>
     </div>
     <div class="col-2 text-left">
-      <a class="nav-link" style="cursor:pointer" (click)="navigate('/preferences')">Preferences</a>
+      <!-- <a class="nav-link" style="cursor:pointer" (click)="navigate('/preferences')">Preferences</a> -->
+      <a href="preferences">Preferences</a>
     </div>
-    <body>
-      <script> src="what-s-for-dinner/karma.conf.js"</script>
-    </body>
-	<!--
-	<nav>
-	  <a routerLink="/recipes">Recipes</a>
-	  <a routerLink="/favorites">Favorites</a>
-	  <a routerLink="/shopping-list">Shopping List</a>
-	</nav>
-	-->		
   </div>  
 </nav>
-<head>
-  <title> jasmine spec runner 4.5.0 </title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.5.0/jasmine.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.5.0/boot1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.5.0/jasmine-html.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jasmine/4.5.0/boot0.js"></script>
-<script src="specs/test.js"></script>
-</head>
-
-<!-- <!DOCTYPE html>
-<nav class="row navbar navbar-light" style="background-color: lightblue;">
-
-  <div class="row ">    
-    <div class="col-2" style="padding-left:4%">
-      <a class="navbar-brand" style="margin-left:1%;" href="#">What's for Dinner?</a>
-    </div>
-
-    <div class="col-2 text-left">
-      <a class="nav-link" style="cursor:pointer" (click)="navigate('/recipes')">Recipes</a>
-    </div>
-    <div class="col-2 text-left">
-      <a class="nav-link" style="cursor:pointer" (click)="navigate('/favorites')">Favorites</a>
-    </div>
-    <div class="col-2 text-left">
-      <a class="nav-link" style="cursor:pointer" (click)="navigate('/shopping-list')">Shopping List</a>
-    </div>
-  </div>
-  
-
-</nav>
--->
-
-
  <router-outlet></router-outlet> 

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RECIPES } from 'src/app/Classes/recipes';
 import recipes from 'src/assets/recipes.json';
+// import { FavoritesComponent } from '../favorites/favorites.component';
 
 @Component({
   selector: 'app-favorites-list',
@@ -20,7 +21,7 @@ export class FavoritesListComponent implements OnInit {
     this.rp = recipes[0];
 
     
-    const RecipeName = localStorage.getItem('Recipe')
+    const RecipeName = localStorage.getItem('addFavorite')
     // console.log(RecipeName)
     for (let i = 0; i <= recipes.length - 1; i++) {
       if (RecipeName == recipes[i].name) {

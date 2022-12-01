@@ -34,7 +34,7 @@ export class WeekDisplayComponent implements OnInit {
     // day[6] = "Sunday";
     //add array of the week and in the constructor add a sample ingredient
     
-    const RecipeName = localStorage.getItem('Recipe')
+    const RecipeName = localStorage.getItem('Recipes')
     console.log(RecipeName)
     for (let i = 0; i <= recipes.length-1; i++) {
       if (RecipeName == recipes[i].name) {
