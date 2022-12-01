@@ -22,7 +22,7 @@ export class WeekDisplayComponent implements OnInit {
 
     const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-    let testRecipe = 
+    //let testRecipe = 
 
     //const daysOfWeek = [];
     // day[0] = "Monday";
