@@ -24,7 +24,7 @@ export class WeekDisplayComponent implements OnInit {
 
     
 
-    //const daysOfWeek = [];
+    // const daysOfWeek = [];
     // day[0] = "Monday";
     // day[1] = "Tuesday";
     // day[2] = "Wednesday";
@@ -32,7 +32,7 @@ export class WeekDisplayComponent implements OnInit {
     // day[4] = "Friday";
     // day[5] = "Saturday";
     // day[6] = "Sunday";
-    //add array of the week and in the constructor add a sample ingredient
+    // add array of the week and in the constructor add a sample ingredient
     
     const RecipeName = localStorage.getItem('Recipes')
     console.log(RecipeName)
