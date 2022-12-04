@@ -8,17 +8,32 @@ import recipes from 'src/assets/recipes.json';
 })
 export class WeekDisplayComponent implements OnInit {
 
-  Monday: RECIPES[]  = [];
-  Tuesday: RECIPES[]  = [];
-  Wednesday: RECIPES[]  = [];
-  Thursday: RECIPES[]  = [];
-  Friday: RECIPES[]  = [];
-  Saturday: RECIPES[]  = [];
-  Sunday: RECIPES[]  = [];
+  // Monday: RECIPES[]  = [];
+  // Tuesday: RECIPES[]  = [];
+  // Wednesday: RECIPES[]  = [];
+  // Thursday: RECIPES[]  = [];
+  // Friday: RECIPES[]  = [];
+  // Saturday: RECIPES[]  = [];
+  // Sunday: RECIPES[]  = [];
+
+  Monday: string;
+  Tuesday: string;
+  Wednesday: string;
+  Thursday: string;
+  Friday: string;
+  Saturday: string;
+  Sunday: string;
 
 
   constructor() {
-    this.Monday.push(recipes[0]);
+    // this.Monday.push(recipes[0]);
+    this.Monday = "Bisquick Quiche"
+    this.Tuesday = "Secret Jagerschnitzel - German Hunter Schnitzel"
+    this.Wednesday = "Beef Stuffed Shells"
+    this.Thursday = "Spinach Ricotta Stuffed Chicken Breasts with Lemon White Wine Sauce"
+    this.Friday = "Moosewood Vegetarian Chili"
+    this.Saturday = "Crustless Tuna Quiche"
+    this.Sunday = "Baked Lemon Chicken with Mushroom Sauce"
 
     const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
