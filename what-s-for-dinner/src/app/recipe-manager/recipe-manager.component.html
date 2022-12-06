@@ -9,6 +9,9 @@
     <label>Recipe Name:</label>
     <input type="text" [(ngModel)]="recipeName">
 
+    <label>Recipe Image:</label>
+    <input type="text" [(ngModel)]="recipeImage">
+
     <label>Recipe Description:</label>
     <input type="text" [(ngModel)]="recipeDescription">
 
@@ -19,7 +22,15 @@
     <input type="text" [(ngModel)]="recipeInstructions">
 
     <label>Time:</label>
-    <input [(ngModel)]="recipeTime" type="number">
+    <input [(ngModel)]="recipeTime" type="string">
+
+    
+    <label>Recipe Tags:</label>
+    <input type="text" [(ngModel)]="recipeTags">
+    
+
+    <label>Favorites:</label>
+    <input type="text" [(ngModel)]="recipeFavorites">
 
 
     <div class="col-2" style="margin-right: -5%;">

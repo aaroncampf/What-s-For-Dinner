@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RECIPES } from 'src/app/Classes/recipes';
-import recipes from 'src/assets/recipes.json';
+import { Recipe } from '../models/recipe.model';
 
 
 @Component({
@@ -9,18 +8,24 @@ import recipes from 'src/assets/recipes.json';
   styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
+  
 
-  rp: RECIPES;
+  rp: Recipe;
 
   constructor() {
-    this.rp = recipes[0];
+
+    let retrievedRecipes = localStorage.getItem('Recipes') as string; 
+    
+    const Recipes:Recipe[] = JSON.parse(retrievedRecipes);
+
+    this.rp = Recipes[0];
     
     
     const RecipeName = localStorage.getItem('Recipe')
     console.log(RecipeName)
-    for (let i = 0; i <= recipes.length-1; i++) {
-      if (RecipeName == recipes[i].name) {
-        this.rp = recipes[i];
+    for (let i = 0; i <= Recipes.length-1; i++) {
+      if (RecipeName == Recipes[i].name) {
+        this.rp = Recipes[i];
 
       }
     }
