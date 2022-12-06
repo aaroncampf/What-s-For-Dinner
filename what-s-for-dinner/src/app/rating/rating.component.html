@@ -1,26 +1,14 @@
 <!doctype html>
 
-<h3>Recipe Rating and Reviews</h3>
+<h4>Recipe Rating</h4>
 <ngb-rating [max]="5"></ngb-rating>
-
-<label>Customer Reviews<br/>
+<br>
+<h4>Reviews<br/>
     <textarea [(ngModel)]="review" name="reviews" rows="5" cols="75"></textarea>
-</label>
+</h4>
 <br>
 <button (click)="post()">Review</button>
 <hr>
 <div *ngFor="let reviews of postReview">
     <p>{{reviews}}</p>
 </div>
-
-<!-- <form method="post">
-    <label>First Name<input type="text" name="firstName"/></label>
-    <br>
-    <label>Last Name<input type="text" name="lastName"/></label>
-    <br>
-    <label>Customer Reviews<br/>
-       <textarea name="reviews" rows="5" cols="75"></textarea>
-    </label>
-    <br>
-    <button>Submit</button>
-</form> -->
