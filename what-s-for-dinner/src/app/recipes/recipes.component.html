@@ -12,16 +12,17 @@
         <p>description: {{recipe.description}}</p>
         <div>
             <u (click)="toggleTag()">ingredients:</u>
-            <p *ngIf="showMe">{{recipe.ingredient}}</p>
+            <p *ngIf="showMe">{{recipe.ingredients}}</p>
         </div>
         <div>
             <u (click)="toggleTag()">instruction:</u>
-            <p *ngIf="showMe">{{recipe.instruction}}</p>
+            <p *ngIf="showMe">{{recipe.instructions}}</p>
         </div>
         <p>cooking time(min): {{recipe.time}}</p>
         <br>
     </div>
 </div>
+<!doctype html>
 
 <!-- [routerLink]="['/detail', recipe.name]" -->
 <script>

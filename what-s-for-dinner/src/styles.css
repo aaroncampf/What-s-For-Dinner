@@ -59,3 +59,24 @@ button>span {
 .btn:focus {
     background-color: white;
 }
+
+
+ .card {
+     margin: 30px;
+     background-color: white;
+     border: 3px solid #f7b801;
+
+     
+ }      
+ 
+ .card-text {
+     color: darkslategray;
+ }
+ 
+ .card-title {
+     color: #2f3547;
+ }
+
+ .container {
+     background-color: white;
+ }

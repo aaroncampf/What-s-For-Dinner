@@ -1,10 +1,11 @@
+<!doctype html>
 
 <h1>{{rp.name}}</h1>
-
+{{rp.description}}
 <ol>
     <br>
-    <p>ingredients: {{rp.ingredient}}</p>
-    <p>instruction: {{rp.instruction}}</p>
+    <p>ingredients: {{rp.ingredients}}</p>
+    <p>instruction: {{rp.instructions}}</p>
     <p>cooking time(min): {{rp.time}}</p>
     <br>
 </ol>
@@ -13,18 +14,4 @@
 
 <!-- <app-favorites></app-favorites>  -->
 
-
-<h3>Recipe Rating and Reviews</h3>
-<ngb-rating [max]="5"></ngb-rating>
-
-<form method="post">
-    <label>First Name<input type="text" name="firstName"/></label>
-    <br>
-    <label>Last Name<input type="text" name="lastName"/></label>
-    <br>
-    <label>Customer Reviews<br/>
-       <textarea name="reviews" rows="5" cols="75"></textarea>
-    </label>
-    <br>
-    <button>Submit</button>
-</form>
+<app-rating></app-rating>

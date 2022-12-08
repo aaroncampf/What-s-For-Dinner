@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import recipes from 'src/assets/recipes.json';
-import { RECIPES as rp } from 'src/app/Classes/recipes';
+import { Recipe } from '../models/recipe.model';
 import { keyframes } from '@angular/animations';
 import { RouterLink } from '@angular/router';
 
@@ -12,10 +11,13 @@ import { RouterLink } from '@angular/router';
 })
 export class RecipesComponent implements OnInit {
 
-  Recipes: rp[] = recipes;
+  Recipes: Recipe[];
  
   constructor() {
-    this.Recipes;
+    let retrievedRecipes = localStorage.getItem('Recipes') as string; 
+    
+   this.Recipes = JSON.parse(retrievedRecipes);
+  
   
    }
 
