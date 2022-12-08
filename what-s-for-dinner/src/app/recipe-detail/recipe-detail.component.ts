@@ -22,14 +22,13 @@ export class RecipeDetailComponent implements OnInit {
     
     
     const RecipeName = localStorage.getItem('Recipe')
-    console.log(RecipeName)
+   
     for (let i = 0; i <= Recipes.length-1; i++) {
       if (RecipeName == Recipes[i].name) {
         this.rp = Recipes[i];
-
       }
     }
-
+    console.log(this.rp);
 
   }
   // public getRecipe (){
