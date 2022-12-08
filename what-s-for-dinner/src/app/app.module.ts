@@ -15,6 +15,7 @@ import { FavoritesListComponent } from './favorites-list/favorites-list.componen
 import { RecipeManagerComponent } from './recipe-manager/recipe-manager.component';
 import { FormsModule } from '@angular/forms';
 import { WeekDisplayComponent } from './week-display/week-display.component';
+import { HomeComponent } from './home/home.component';
 //import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
 
 @NgModule({
@@ -28,7 +29,8 @@ import { WeekDisplayComponent } from './week-display/week-display.component';
     RecipeDetailComponent,
     FavoritesListComponent,
     RecipeManagerComponent,
-    WeekDisplayComponent
+    WeekDisplayComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
