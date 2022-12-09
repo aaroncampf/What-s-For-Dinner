@@ -19,22 +19,28 @@ export class WeekDisplayComponent implements OnInit {
     
     let retrievedRecipes = localStorage.getItem('Recipes') as string;    
     var Data: Recipe[]= JSON.parse(retrievedRecipes);
+    let randomArr: Recipe[] = [];
 
-    this.Monday.push(Data[0]);
-    this.Monday.push(Data[1]);
-    this.Tuesday.push(Data[0]);
-    this.Tuesday.push(Data[1]);
-    this.Wednesday.push(Data[0]);
-    this.Wednesday.push(Data[1]);
-    this.Thursday.push(Data[0]);
-    this.Thursday.push(Data[1]);
-    this.Friday.push(Data[0]);
-    this.Friday.push(Data[1]);
-    this.Saturday.push(Data[0]);
-    this.Saturday.push(Data[1]);
-    this.Sunday.push(Data[0]);
-    this.Sunday.push(Data[1]);
+    for (let i = 0; i < Data.length; i++){
+      let randomRecipe = Data[Math.floor(Math.random() * Data.length)];
+      if (!randomArr.includes(randomRecipe))
+      randomArr.push(randomRecipe)
+    }
+ 
+    console.log(randomArr)
+  
+
+
+    this.Monday.push(randomArr[0]);
+    this.Tuesday.push(randomArr[1]);
+    this.Wednesday.push(randomArr[2]);
+    this.Thursday.push(randomArr[3]);
+    this.Friday.push(randomArr[4]);
+    this.Saturday.push(randomArr[5]);
+    this.Sunday.push(randomArr[6]);
   }
+
+  
   ngOnInit(): void {
   }
 }
