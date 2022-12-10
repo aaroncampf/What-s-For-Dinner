@@ -1,5 +1,21 @@
 #recipeList {
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
-    color: rgb(68, 0, 255);
+    color: darkslategray;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+a:hover {
+    color: #8BAAAD;
+}
+u {
+    text-decoration: none;
+}
+u:hover {
+    color: #8BAAAD;
+    cursor: pointer;
 }
