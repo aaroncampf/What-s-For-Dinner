@@ -41,7 +41,7 @@ export class WeekDisplayComponent implements OnInit {
     }
     localStorage.setItem('RandomRecipes', JSON.stringify(randomArr) ) ;
     window.location.reload();
-    // console.log(savedRecipes);
+   
   }
   
 //   
