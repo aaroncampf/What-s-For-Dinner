@@ -21,3 +21,12 @@
  .btn {
      border: 1px solid black;
  }
+
+ a {
+     text-decoration: none;
+     color: darkslategray;
+ }
+
+ a:hover {
+     color: #8BAAAD;
+ }
