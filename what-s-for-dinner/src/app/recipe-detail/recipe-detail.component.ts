@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Recipe } from '../models/recipe.model';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 
 
 @Component({
@@ -41,6 +43,22 @@ export class RecipeDetailComponent implements OnInit {
   //     }
   //   }
   
+  public exportPDF() {
+    let doc = new jsPDF('p','pt','letter');
+    let margin = 10;
+    let scale = (doc.internal.pageSize.width - margin *2) / document.body.scrollWidth;
+    doc.html(document.body, {
+     x: margin,
+     y: margin,
+     html2canvas: {
+       scale: scale,
+     },
+     callback:function(doc){
+       doc.save('recipe.pdf')
+     }
+    });
+     
+ }
 
   //   let name = this.router.snapshot.paramMap.get("name");
   //   getRecipe(){

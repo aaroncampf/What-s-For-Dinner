@@ -1,0 +1,32 @@
+ .card {
+     margin: 30px;
+     background-color: white;
+     border: 3px solid #f7b801;
+
+     
+ }      
+ 
+ .card-text {
+     color: darkslategray;
+ }
+ 
+ .card-title {
+     color: #2f3547;
+ }
+
+ .container {
+     background-color: white;
+ }
+
+ .btn {
+     border: 1px solid black;
+ }
+
+ a {
+     text-decoration: none;
+     color: darkslategray;
+ }
+
+ a:hover {
+     color: #8BAAAD;
+ }

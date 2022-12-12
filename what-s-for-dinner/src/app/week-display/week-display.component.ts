@@ -7,7 +7,7 @@ import { Recipe } from '../models/recipe.model';
   styleUrls: ['./week-display.component.css']
 })
 export class WeekDisplayComponent implements OnInit {
-  Monday: Recipe[]  = [];
+  Monday: Recipe[] = [];
   Tuesday: Recipe[]  = [];
   Wednesday: Recipe[]  = [];
   Thursday: Recipe[]  = [];
@@ -17,24 +17,34 @@ export class WeekDisplayComponent implements OnInit {
 
   constructor() {
     
-    let retrievedRecipes = localStorage.getItem('Recipes') as string;    
-    var Data: Recipe[]= JSON.parse(retrievedRecipes);
-
-    this.Monday.push(Data[0]);
-    this.Monday.push(Data[1]);
-    this.Tuesday.push(Data[0]);
-    this.Tuesday.push(Data[1]);
-    this.Wednesday.push(Data[0]);
-    this.Wednesday.push(Data[1]);
-    this.Thursday.push(Data[0]);
-    this.Thursday.push(Data[1]);
-    this.Friday.push(Data[0]);
-    this.Friday.push(Data[1]);
-    this.Saturday.push(Data[0]);
-    this.Saturday.push(Data[1]);
-    this.Sunday.push(Data[0]);
-    this.Sunday.push(Data[1]);
+    let savedRandomRecipes = localStorage.getItem('RandomRecipes') as string;
+    let savedRandomArray = JSON.parse(savedRandomRecipes);
+    
+    this.Monday.push(savedRandomArray[0]);
+    this.Tuesday.push(savedRandomArray[1]);
+    this.Wednesday.push(savedRandomArray[2]);
+    this.Thursday.push(savedRandomArray[3]);
+    this.Friday.push(savedRandomArray[4]);
+    this.Saturday.push(savedRandomArray[5]);
+    this.Sunday.push(savedRandomArray[6]);
   }
+
+  public getRandomRecipes (){
+    let retrievedRecipes = localStorage.getItem('Recipes') as string; 
+    var Data: Recipe[] = JSON.parse(retrievedRecipes);
+    let randomArr: Recipe[] = [];
+
+    for (let i = 0; i < Data.length; i++) {
+      let randomRecipe = Data[Math.floor(Math.random() * Data.length)];
+      if (!randomArr.includes(randomRecipe))
+        randomArr.push(randomRecipe)
+    }
+    localStorage.setItem('RandomRecipes', JSON.stringify(randomArr) ) ;
+    window.location.reload();
+   
+  }
+  
+//   
   ngOnInit(): void {
   }
 }
