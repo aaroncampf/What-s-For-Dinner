@@ -8,29 +8,31 @@ import { Recipe } from '../models/recipe.model';
 })
 export class WeekDisplayComponent implements OnInit {
   Monday: Recipe[] = [];
-  Tuesday: Recipe[]  = [];
-  Wednesday: Recipe[]  = [];
-  Thursday: Recipe[]  = [];
-  Friday: Recipe[]  = [];
-  Saturday: Recipe[]  = [];
-  Sunday: Recipe[]  = [];
+  Tuesday: Recipe[] = [];
+  Wednesday: Recipe[] = [];
+  Thursday: Recipe[] = [];
+  Friday: Recipe[] = [];
+  Saturday: Recipe[] = [];
+  Sunday: Recipe[] = [];
 
   constructor() {
-    
+
     let savedRandomRecipes = localStorage.getItem('RandomRecipes') as string;
-    let savedRandomArray = JSON.parse(savedRandomRecipes);
-    
-    this.Monday.push(savedRandomArray[0]);
-    this.Tuesday.push(savedRandomArray[1]);
-    this.Wednesday.push(savedRandomArray[2]);
-    this.Thursday.push(savedRandomArray[3]);
-    this.Friday.push(savedRandomArray[4]);
-    this.Saturday.push(savedRandomArray[5]);
-    this.Sunday.push(savedRandomArray[6]);
+    let savedRandomArray: Array<any> = JSON.parse(savedRandomRecipes);
+
+    if (savedRandomArray) {
+      this.Monday.push(savedRandomArray[0]);
+      this.Tuesday.push(savedRandomArray[1]);
+      this.Wednesday.push(savedRandomArray[2]);
+      this.Thursday.push(savedRandomArray[3]);
+      this.Friday.push(savedRandomArray[4]);
+      this.Saturday.push(savedRandomArray[5]);
+      this.Sunday.push(savedRandomArray[6]);
+    }
   }
 
-  public getRandomRecipes (){
-    let retrievedRecipes = localStorage.getItem('Recipes') as string; 
+  public getRandomRecipes() {
+    let retrievedRecipes = localStorage.getItem('Recipes') as string;
     var Data: Recipe[] = JSON.parse(retrievedRecipes);
     let randomArr: Recipe[] = [];
 
@@ -39,12 +41,12 @@ export class WeekDisplayComponent implements OnInit {
       if (!randomArr.includes(randomRecipe))
         randomArr.push(randomRecipe)
     }
-    localStorage.setItem('RandomRecipes', JSON.stringify(randomArr) ) ;
+    localStorage.setItem('RandomRecipes', JSON.stringify(randomArr));
     window.location.reload();
-   
+
   }
-  
-//   
+
+  //   
   ngOnInit(): void {
   }
 }
