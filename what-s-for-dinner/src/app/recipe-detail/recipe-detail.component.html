@@ -1,20 +1,27 @@
 <!doctype html>
 
-<h1>{{rp.name}}</h1>
-{{rp.description}}
-<div>
-    
-    <ol>
-        <br>
-        <p>ingredients: {{rp.ingredients}}</p>
-        <p>instruction: {{rp.instructions}}</p>
-        <p>cooking time(min): {{rp.time}}</p>
-        <br>
-    </ol>
-    <button (click)="exportPDF()">Download Recipe</button>
-</div>
-    
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">{{rp.name}}</h1>
+            <h4 class="card-subtitle">{{rp.description}}</h4>
 
-<!-- <app-favorites></app-favorites>  -->
+            <ol>
+                <br>
+                <p>Ingredients: {{rp.ingredients}}</p>
+                <p>Instructions: {{rp.instructions}}</p>
+                <p>Cooking Time: {{rp.time}} mins</p>
+                <br>
+            </ol>
+            <button class="btn btn-success" (click)="exportPDF()">Download Recipe</button>
+            <br>
 
-<app-rating></app-rating>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- <app-favorites></app-favorites>  -->
+    <div class="container">
+        <app-rating></app-rating>
+    </div>
+</body>

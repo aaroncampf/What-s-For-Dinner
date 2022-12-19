@@ -9,16 +9,16 @@
 <div class="container">
     <div class="row">
         <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Monday</h5>
             <div class="card-body" *ngFor="let Item of Monday">
+            <h2 class="card-title">Monday</h2>
                 <p class="card-text">
                     <a href="/detail/{{Item.name}}" onClick="localStorage.setItem('Recipe', this.innerHTML)">{{Item.name}}</a>
                     </p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Tuesday</h5>
             <div class="card-body" *ngFor="let Item of Tuesday">
+            <h2 class="card-title">Tuesday</h2>
                 <p class="card-text">
                     <a href="/detail/{{Item.name}}" onClick="localStorage.setItem('Recipe', this.innerHTML)">{{Item.name}}</a>
 
@@ -26,8 +26,8 @@
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Wednesday</h5>
             <div class="card-body" *ngFor="let Item of Wednesday">
+            <h2 class="card-title">Wednesday</h2>
                 <p class="card-text">
                      <a href="/detail/{{Item.name}}" onClick="localStorage.setItem('Recipe', this.innerHTML)">{{Item.name}}</a>
 
@@ -35,42 +35,39 @@
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Thursday</h5>
             <div class="card-body" *ngFor="let Item of Thursday">
+            <h2 class="card-title">Thursday</h2>
                 <p class="card-text">
                      <a href="/detail/{{Item.name}}" onClick="localStorage.setItem('Recipe', this.innerHTML)">{{Item.name}}</a>
-
                 </p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Friday</h5>
             <div class="card-body" *ngFor="let Item of Friday">
+            <h2 class="card-title">Friday</h2>
                 <p class="card-text">
                     <a href="/detail/{{Item.name}}" onClick="localStorage.setItem('Recipe', this.innerHTML)">{{Item.name}}</a>
-
                 </p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Saturday</h5>
-            <div class="card-body" *ngFor="let Item of Saturday">
+        <div class="card-body" *ngFor="let Item of Saturday">
+            <h2 class="card-title">Saturday</h2>
                 <p class="card-text">
                    <a href="/detail/{{Item.name}}" onClick="localStorage.setItem('Recipe', this.innerHTML)">{{Item.name}}</a>
-
                 </p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Sunday</h5>
             <div class="card-body" *ngFor="let Item of Sunday">
+            <h2 class="card-title">Sunday</h2>
                 <p class="card-text">
                     <a href="/detail/{{Item.name}}" onClick="localStorage.setItem('Recipe', this.innerHTML)">{{Item.name}}</a>
-
                 </p>
             </div>
+            
         </div>
-        
+            <button class='btn btn-success' (click)="getRandomRecipes()">What's For Dinner?</button>
+
     </div>
-    <button class = 'btn' (click)="getRandomRecipes()">What's For Dinner?</button>
 </div>
