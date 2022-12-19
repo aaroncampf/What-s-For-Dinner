@@ -20,7 +20,7 @@ export class WeekDisplayComponent implements OnInit {
     let savedRandomRecipes = localStorage.getItem('RandomRecipes') as string;
     let savedRandomArray = JSON.parse(savedRandomRecipes);
     
-    if(savedRandomArray.length > 0) {
+    if(savedRandomArray) {
       this.Monday.push(savedRandomArray[0]);
       this.Tuesday.push(savedRandomArray[1]);
       this.Wednesday.push(savedRandomArray[2]);
