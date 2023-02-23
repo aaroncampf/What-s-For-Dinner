@@ -16,7 +16,7 @@ import { RecipeManagerComponent } from './recipe-manager/recipe-manager.componen
 import { FormsModule } from '@angular/forms';
 import { WeekDisplayComponent } from './week-display/week-display.component';
 import { HomeComponent } from './home/home.component';
-//import { NavbarHomepageComponent } from './Components/navbar-homepage/navbar-homepage.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { HomeComponent } from './home/home.component';
     FavoritesListComponent,
     RecipeManagerComponent,
     WeekDisplayComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
